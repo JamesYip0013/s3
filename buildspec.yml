@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - java -version
+  build:
+    commands:
+      - mvn clean install
+cache:
+  paths:
+    - '/root/.m2/**/*'
